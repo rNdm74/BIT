@@ -161,3 +161,6 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+/Java/pDate/nbproject/private/
+/Java/pBirthday/nbproject/private/
+/Java/pFriend/nbproject/private/
