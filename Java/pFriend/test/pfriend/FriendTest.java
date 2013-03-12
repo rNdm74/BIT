@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Ignore;
 
 /**
  *
@@ -43,20 +44,21 @@ public class FriendTest {
     @Test
     public void testSetBirthdate_3args_1() {
         System.out.println("SetBirthdate");
-        int year = 0;
-        int month = 0;
-        int day = 0;
-        Friend instance = null;
-        GregorianCalendar expResult = null;
-        GregorianCalendar result = instance.SetBirthdate(year, month, day);
+        int year = 2000;
+        int month = 12;
+        int day = 05;
+        Friend instance = new Friend("Bob", "Marly");
+        String expResult = "05\\12\\2000";
+        instance.SetBirthdate(day, month, year);
+        String result = instance.getBirthdate();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
      * Test of isTheSame method, of class Friend.
      */
+    @Ignore
     @Test
     public void testIsTheSame() {
         System.out.println("isTheSame");
@@ -72,6 +74,7 @@ public class FriendTest {
     /**
      * Test of SetName method, of class Friend.
      */
+    @Ignore
     @Test
     public void testSetName() {
         System.out.println("SetName");
@@ -86,6 +89,7 @@ public class FriendTest {
     /**
      * Test of SetExtras method, of class Friend.
      */
+    @Ignore
     @Test
     public void testSetExtras() {
         System.out.println("SetExtras");
@@ -102,6 +106,7 @@ public class FriendTest {
     /**
      * Test of toString method, of class Friend.
      */
+    @Ignore
     @Test
     public void testToString() {
         System.out.println("toString");
@@ -116,6 +121,7 @@ public class FriendTest {
     /**
      * Test of age method, of class Friend.
      */
+    @Ignore
     @Test
     public void testAge() {
         System.out.println("age");
@@ -130,6 +136,7 @@ public class FriendTest {
     /**
      * Test of getFirstName method, of class Friend.
      */
+    @Ignore
     @Test
     public void testGetFirstName() {
         System.out.println("getFirstName");
@@ -144,6 +151,7 @@ public class FriendTest {
     /**
      * Test of setFirstName method, of class Friend.
      */
+    @Ignore
     @Test
     public void testSetFirstName() {
         System.out.println("setFirstName");
@@ -157,6 +165,7 @@ public class FriendTest {
     /**
      * Test of getLastName method, of class Friend.
      */
+    @Ignore
     @Test
     public void testGetLastName() {
         System.out.println("getLastName");
@@ -171,6 +180,7 @@ public class FriendTest {
     /**
      * Test of setLastName method, of class Friend.
      */
+    @Ignore
     @Test
     public void testSetLastName() {
         System.out.println("setLastName");
@@ -184,6 +194,7 @@ public class FriendTest {
     /**
      * Test of getBirthdate method, of class Friend.
      */
+    @Ignore
     @Test
     public void testGetBirthdate() {
         System.out.println("getBirthdate");
@@ -198,6 +209,7 @@ public class FriendTest {
     /**
      * Test of setBirthdate method, of class Friend.
      */
+    @Ignore
     @Test
     public void testSetBirthdate_3args_2() {
         System.out.println("setBirthdate");
@@ -213,6 +225,7 @@ public class FriendTest {
     /**
      * Test of getGender method, of class Friend.
      */
+    @Ignore
     @Test
     public void testGetGender() {
         System.out.println("getGender");
@@ -227,6 +240,7 @@ public class FriendTest {
     /**
      * Test of setGender method, of class Friend.
      */
+    @Ignore
     @Test
     public void testSetGender() {
         System.out.println("setGender");
@@ -240,6 +254,7 @@ public class FriendTest {
     /**
      * Test of getHometown method, of class Friend.
      */
+    @Ignore
     @Test
     public void testGetHometown() {
         System.out.println("getHometown");
@@ -254,6 +269,7 @@ public class FriendTest {
     /**
      * Test of setHometown method, of class Friend.
      */
+    @Ignore
     @Test
     public void testSetHometown() {
         System.out.println("setHometown");
@@ -267,6 +283,7 @@ public class FriendTest {
     /**
      * Test of getEmail method, of class Friend.
      */
+    @Ignore
     @Test
     public void testGetEmail() {
         System.out.println("getEmail");
@@ -281,6 +298,7 @@ public class FriendTest {
     /**
      * Test of setEmail method, of class Friend.
      */
+    @Ignore
     @Test
     public void testSetEmail() {
         System.out.println("setEmail");
@@ -294,6 +312,7 @@ public class FriendTest {
     /**
      * Test of getRelationshipStatus method, of class Friend.
      */
+    @Ignore
     @Test
     public void testGetRelationshipStatus() {
         System.out.println("getRelationshipStatus");
@@ -308,6 +327,7 @@ public class FriendTest {
     /**
      * Test of setRelationshipStatus method, of class Friend.
      */
+    @Ignore
     @Test
     public void testSetRelationshipStatus() {
         System.out.println("setRelationshipStatus");
@@ -321,6 +341,7 @@ public class FriendTest {
     /**
      * Test of getDateAdded method, of class Friend.
      */
+    @Ignore
     @Test
     public void testGetDateAdded() {
         System.out.println("getDateAdded");
@@ -335,6 +356,7 @@ public class FriendTest {
     /**
      * Test of setDateAdded method, of class Friend.
      */
+    @Ignore
     @Test
     public void testSetDateAdded() {
         System.out.println("setDateAdded");
