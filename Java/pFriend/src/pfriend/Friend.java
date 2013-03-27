@@ -48,8 +48,8 @@ public final class Friend {
     
     public boolean isTheSame(Friend friend)
     {
-        return (friend.firstName.equals(this.firstName) && friend.lastName.equals(this.lastName) 
-                && friend.birthdate == this.birthdate) ? true : false;
+        return (this.firstName.equals(friend.firstName) && this.lastName.equals(friend.lastName) 
+                && this.birthdate.equals(friend.birthdate)) ? true : false;
     }
     public void SetName(String firstName, String lastName)
     {
@@ -172,21 +172,15 @@ public final class Friend {
      * @param birthdate the birthdate to set
      */
     public void setBirthdate(int day, int month, int year) {
-        this.birthdate = new GregorianCalendar(year, month, day);
+        this.birthdate = new GregorianCalendar(year, month - 1, day);
     }
 
     /**
      * @return the gender
      */
-    public char getGender() {
-        if (gender == ' ') 
-        {
-            throw new NullPointerException("Gender is null");
-        }
-        else
-        {
+    public char getGender()
+    {
             return gender;
-        }
     }
 
     /**
@@ -267,10 +261,4 @@ public final class Friend {
                 + "\\" + dateAdded.get(GregorianCalendar.YEAR));
     }
 
-    /**
-     * @param dateAdded the dateAdded to set
-     */
-    public void setDateAdded(int day, int month, int year) {
-        this.dateAdded = new GregorianCalendar(year, month, day);
-    }
 }
