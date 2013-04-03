@@ -4,6 +4,7 @@
  */
 package psorting;
 
+import java.util.Arrays;
 import junit.framework.TestCase;
 
 /**
@@ -31,26 +32,24 @@ public class SortTest extends TestCase {
      */
     public void testSelectionSort() {
         System.out.println("SelectionSort");
-        int[] numbers = null;
+        int[] arr = {5,8,2,3,1};
+        int[] exp = {1,2,3,5,8};
         Sort instance = new Sort();
-        int[] expResult = null;
-        int[] result = instance.SelectionSort(numbers);
-        assertArrayEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        arr = instance.SelectionSort(arr);
+        assertTrue(Arrays.equals(exp,arr));
+        
     }
 
     /**
      * Test of BubbleSort method, of class Sort.
      */
+
     public void testBubbleSort() {
         System.out.println("BubbleSort");
-        int[] numbers = null;
+        int[] arr = {5,8,2,3,1};
+        int[] exp = {1,2,3,5,8};
         Sort instance = new Sort();
-        int[] expResult = null;
-        int[] result = instance.BubbleSort(numbers);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        arr = instance.BubbleSort(arr);
+        assertTrue(Arrays.equals(exp,arr));
     }
 }

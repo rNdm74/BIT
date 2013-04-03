@@ -20,6 +20,23 @@ public class SortingApp {
         int[] numbers4 = {1,2,3,4,5,6,7,8,9};
         int[] numbers5 = {1,1,1,1,1,1,1,1,1};
         
+        int[][] numbers = {numbers1, numbers2, numbers3, numbers4, numbers5};
+        
+        System.out.println("Bubble\n");
+        
+        for (int i = 0; i < numbers.length; i++)
+        {
+            new Sort().BubbleSort(numbers[i]);
+            System.out.println();
+        }
+        
+        System.out.println("Selection\n");
+        
+        for (int i = 0; i < numbers.length; i++)
+        {
+            new Sort().SelectionSort(numbers[i]);
+            System.out.println();
+        }
         
     }
 }
